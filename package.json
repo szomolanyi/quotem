@@ -1,0 +1,16 @@
+{
+  "name": "quotem",
+  "version": "0.0.0",
+  "description": "Quote machine web page for FreeCodeCamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "R.Szomolanyi",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-util": "~3.0.7",
+    "gulp-webserver": "~0.9.1"
+  }
+}
