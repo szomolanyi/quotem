@@ -1,4 +1,33 @@
 body {
-    margin-top: 100px;
     background-image: url(seamless_paper_texture.png);
+    margin-top: 10px;
+}
+
+@media (min-height: 300px) {
+    body {
+        margin-top: 20px;
+        
+    }
+}
+
+@media (min-height: 400px) {
+    body {
+        margin-top: 30px;
+        
+    }
+}
+
+@media (min-height: 500px) {
+    body {
+        margin-top: 50px;
+        
+    }
+}
+
+
+@media (min-height: 600px) {
+    body {
+        margin-top: 60px;
+        
+    }
 }

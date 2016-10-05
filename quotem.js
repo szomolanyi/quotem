@@ -1,10 +1,11 @@
 
 function get_quote() {
-    console.log("tu2")
     $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", 
         function(json) {
-        console.log("tu1")
-        $("#quote_msg").html("<h3>"+json[0].content + "</h3><footer>" + json[0].title + "</footer>");
+        c=jQuery(json[0].content).text();
+        console.log(c);
+        $("#quote_msg").html("<h3>"+c + "</h3><footer>" + json[0].title + "</footer>");
+        $("#btn_tweet").attr("href", "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="+"'"+c+"' " + json[0].title);
     });
 }
 
@@ -12,7 +13,6 @@ $(document).ready(function(){
     $.ajaxSetup({ cache: false });
     get_quote();
     $("#btn_get_quote").on("click", function() {
-        console.log("tu");
         get_quote();
     });
 })
