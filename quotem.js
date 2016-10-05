@@ -1,7 +1,7 @@
 
 function get_quote() {
     console.log("tu2")
-    $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", 
+    $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", 
         function(json) {
         console.log("tu1")
         $("#quote_msg").html("<h3>"+json[0].content + "</h3><footer>" + json[0].title + "</footer>");
