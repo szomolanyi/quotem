@@ -12,7 +12,6 @@ function get_quote() {
 $(document).ready(function(){
     $.ajaxSetup({ cache: false });
     get_quote();
-    $("#btn_get_quote").on("click", function() {
-        get_quote();
-    });
+    $("#btn_get_quote").on("click", get_quote);
 })
+
